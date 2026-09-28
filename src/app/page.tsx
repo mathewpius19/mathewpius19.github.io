@@ -19,19 +19,19 @@ export default function Home() {
           <Hero />
         </ScrollSection>
 
-        <ScrollSection>
+        <ScrollSection id="about">
           <About />
         </ScrollSection>
 
-        <ScrollSection align="start">
+        <ScrollSection id="experience" align="start">
           <Experience />
         </ScrollSection>
 
-        <ScrollSection>
+        <ScrollSection id="projects">
           <Projects />
         </ScrollSection>
 
-        <ScrollSection>
+        <ScrollSection id="skills">
           <Skills />
         </ScrollSection>
 

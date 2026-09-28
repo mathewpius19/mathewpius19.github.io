@@ -6,6 +6,7 @@ import { ReactNode } from "react";
 interface ScrollSectionProps {
   children: ReactNode;
   align?: "center" | "start";
+  id?: string;
 }
 
 const sectionVariants: Variants = {
@@ -29,7 +30,7 @@ const sectionVariants: Variants = {
   },
 };
 
-export function ScrollSection({ children, align = "center" }: ScrollSectionProps) {
+export function ScrollSection({ children, align = "center", id }: ScrollSectionProps) {
   const isStart = align === "start";
   
   const sectionClass = isStart 
@@ -42,6 +43,7 @@ export function ScrollSection({ children, align = "center" }: ScrollSectionProps
 
   return (
     <motion.section
+      id={id}
       className={sectionClass}
       initial="hidden"
       whileInView="visible"

@@ -27,7 +27,7 @@ export function Skills() {
   ];
 
   return (
-    <div id="skills">
+    <div >
       <div className="text-xs tracking-[0.3em] uppercase text-[#27C2B8] mb-10">
         {"// TECH STACK"}
       </div>

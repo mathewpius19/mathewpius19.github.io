@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <div id="about">
+    <div >
       <div className="text-xs tracking-[0.3em] uppercase text-[#27C2B8] mb-8">
         {"// ABOUT"}
       </div>

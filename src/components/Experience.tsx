@@ -1,6 +1,6 @@
 export function Experience() {
   return (
-    <div id="experience">
+    <div >
       <div className="text-xs tracking-[0.3em] uppercase text-[#27C2B8] mb-10">
         {"// WORK EXPERIENCE"}
       </div>

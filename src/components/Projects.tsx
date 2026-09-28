@@ -29,7 +29,7 @@ export function Projects() {
   ];
 
   return (
-    <div id="projects">
+    <div >
       <div className="text-xs tracking-[0.3em] uppercase text-[#27C2B8] mb-10">
         {"// FEATURED PROJECTS"}
       </div>
