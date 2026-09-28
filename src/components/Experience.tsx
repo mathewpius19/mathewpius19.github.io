@@ -38,7 +38,7 @@ export function Experience() {
             <div className="border border-[#292E34] bg-[#16191D] p-5 rounded-sm">
               <h4 className="text-sm font-bold text-[#27C2B8] mb-3 tracking-wider uppercase">{'>'} Engineering Delivery & Testing</h4>
               <p className="text-sm text-[#9CA3AB] leading-relaxed">
-                Improved software delivery and testing by integrating reconciliation workflows into GitLab CI/CD and extending Cucumber test suites with ALLOY-specific scenarios, improving integration testing and implementation time by <span className="text-[#F1F3F5] font-semibold">~2x</span> while preserving regression coverage.
+                Improved software delivery and testing by integrating reconciliation workflows into GitLab CI/CD and expanding Cucumber test coverage for business scenarios, reducing integration testing and implementation time by <span className="text-[#F1F3F5] font-semibold">~2x</span> while preserving regression coverage.
               </p>
             </div>
 
