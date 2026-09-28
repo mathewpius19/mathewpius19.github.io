@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #111315;
+    color: #F1F3F5;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.section-snap {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
+
+/* Glitch animation */
+@keyframes glitch {
+  0% { text-shadow: 2px 0 #27C2B8, -2px 0 #4DD8CF; }
+  20% { text-shadow: -2px 2px #27C2B8, 2px -2px #4DD8CF; }
+  40% { text-shadow: 2px -2px #27C2B8, -2px 2px #4DD8CF; }
+  60% { text-shadow: 0 2px #27C2B8, 0 -2px #4DD8CF; }
+  80% { text-shadow: -2px 0 #27C2B8, 2px 0 #4DD8CF; }
+  100% { text-shadow: 2px 0 #27C2B8, -2px 0 #4DD8CF; }
+}
+
+.glitch {
+  animation: glitch 3s infinite;
+}
+
+/* Scanline */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.scanline::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(39, 194, 184, 0.15), transparent);
+  animation: scanline 8s linear infinite;
+  pointer-events: none;
+  z-index: 100;
+}
