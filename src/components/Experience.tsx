@@ -23,14 +23,9 @@ export function Experience() {
           <div className="space-y-6">
             <div className="border border-[#292E34] bg-[#16191D] p-5 rounded-sm">
               <h4 className="text-sm font-bold text-[#27C2B8] mb-3 tracking-wider uppercase">{'>'} Data Architecture & Performance</h4>
-              <div className="text-sm text-[#9CA3AB] leading-relaxed space-y-3">
-                <p>
-                  Migrated reference-data sourcing for <span className="text-[#F1F3F5] font-semibold">5M+ daily regulatory transactions</span> from legacy Sybase IQ to a new authenticated data platform. Redesigned Spark processing and built reusable FINOS Legend APIs backed by Snowflake and SingleStore, reducing access latency from <span className="text-[#F1F3F5] font-semibold">~90s to ~4s</span>.
-                </p>
-                <p>
-                  Improved reference-data query response times by <span className="text-[#F1F3F5] font-semibold">~2x</span> by developing optimized GraphQL queries and Java request/response models, reducing redundant retrieval through CTE-based execution.
-                </p>
-              </div>
+              <p className="text-sm text-[#9CA3AB] leading-relaxed">
+                Migrated reference-data sourcing for <span className="text-[#F1F3F5] font-semibold">5M+ daily regulatory transactions</span> and built reusable APIs that reduced access latency from <span className="text-[#F1F3F5] font-semibold">~90s to ~4s</span>. Further improved query response times by <span className="text-[#F1F3F5] font-semibold">~2x</span> through optimized GraphQL queries, Java request/response models, and CTE-based execution.
+              </p>
             </div>
 
             <div className="border border-[#292E34] bg-[#16191D] p-5 rounded-sm">
@@ -41,15 +36,10 @@ export function Experience() {
             </div>
 
             <div className="border border-[#292E34] bg-[#16191D] p-5 rounded-sm">
-              <h4 className="text-sm font-bold text-[#27C2B8] mb-3 tracking-wider uppercase">{'>'} Testing & CI/CD</h4>
-              <div className="text-sm text-[#9CA3AB] leading-relaxed space-y-3">
-                <p>
-                  Improved integration testing and implementation time by <span className="text-[#F1F3F5] font-semibold">~2x</span> by extending Cucumber test suites with ALLOY-specific scenarios while preserving existing regression coverage.
-                </p>
-                <p>
-                  Integrated the reconciliation application into existing GitLab CI/CD workflows by configuring .gitlab-ci.yml and project rules for team-wide development and deployment.
-                </p>
-              </div>
+              <h4 className="text-sm font-bold text-[#27C2B8] mb-3 tracking-wider uppercase">{'>'} Engineering Delivery & Testing</h4>
+              <p className="text-sm text-[#9CA3AB] leading-relaxed">
+                Improved software delivery and testing by integrating reconciliation workflows into GitLab CI/CD and extending Cucumber test suites with ALLOY-specific scenarios, improving integration testing and implementation time by <span className="text-[#F1F3F5] font-semibold">~2x</span> while preserving regression coverage.
+              </p>
             </div>
 
             <div className="border border-[#292E34] bg-[#16191D] p-5 rounded-sm">
@@ -61,7 +51,7 @@ export function Experience() {
           </div>
 
           <div className="flex flex-wrap gap-2 mt-6">
-            {['Java', 'Spark', 'SQL', 'Snowflake', 'SingleStore', 'REST', 'GraphQL', 'MCP', 'GitLab CI/CD'].map(tag => (
+            {['Java', 'Spark', 'SQL', 'Snowflake', 'SingleStore', 'REST', 'GraphQL', 'MCP', 'GitLab CI/CD', 'Cucumber', 'Integration Testing', 'Regression Testing'].map(tag => (
               <span key={tag} className="text-[10px] tracking-wider uppercase border border-[#292E34] text-[#9CA3AB] bg-[#111315] px-2 py-1">
                 {tag}
               </span>
