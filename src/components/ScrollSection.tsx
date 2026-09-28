@@ -31,13 +31,13 @@ const sectionVariants: Variants = {
 export function ScrollSection({ children }: ScrollSectionProps) {
   return (
     <motion.section
-      className="snap-start min-h-screen flex items-center justify-center relative"
+      className="snap-start min-h-screen flex flex-col justify-start pt-28 pb-16 relative"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.15 }}
       variants={sectionVariants}
     >
-      <div className="w-full max-w-5xl mx-auto px-6 py-16">
+      <div className="w-full max-w-5xl mx-auto px-6">
         {children}
       </div>
     </motion.section>
