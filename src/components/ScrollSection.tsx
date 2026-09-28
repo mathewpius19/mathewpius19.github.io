@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 
 interface ScrollSectionProps {
   children: ReactNode;
+  align?: "center" | "start";
 }
 
 const sectionVariants: Variants = {
@@ -28,16 +29,26 @@ const sectionVariants: Variants = {
   },
 };
 
-export function ScrollSection({ children }: ScrollSectionProps) {
+export function ScrollSection({ children, align = "center" }: ScrollSectionProps) {
+  const isStart = align === "start";
+  
+  const sectionClass = isStart 
+    ? "snap-start min-h-screen flex flex-col justify-start pt-28 relative"
+    : "snap-start min-h-screen flex items-center justify-center relative";
+    
+  const innerClass = isStart
+    ? "w-full max-w-5xl mx-auto px-6 pb-16"
+    : "w-full max-w-5xl mx-auto px-6 py-16";
+
   return (
     <motion.section
-      className="snap-start min-h-screen flex flex-col justify-start pt-28 pb-16 relative"
+      className={sectionClass}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.15 }}
       variants={sectionVariants}
     >
-      <div className="w-full max-w-5xl mx-auto px-6">
+      <div className={innerClass}>
         {children}
       </div>
     </motion.section>

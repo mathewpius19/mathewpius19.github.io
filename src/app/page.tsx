@@ -23,7 +23,7 @@ export default function Home() {
           <About />
         </ScrollSection>
 
-        <ScrollSection>
+        <ScrollSection align="start">
           <Experience />
         </ScrollSection>
 
