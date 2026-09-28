@@ -23,9 +23,14 @@ export function Experience() {
           <div className="space-y-6">
             <div className="border border-[#292E34] bg-[#16191D] p-5 rounded-sm">
               <h4 className="text-sm font-bold text-[#27C2B8] mb-3 tracking-wider uppercase">{'>'} Data Architecture & Performance</h4>
-              <p className="text-sm text-[#9CA3AB] leading-relaxed">
-                Migrated reference-data sourcing for <span className="text-[#F1F3F5] font-semibold">5M+ daily regulatory transactions</span> from legacy Sybase IQ to a new authenticated data platform. Redesigned Spark processing and built reusable FINOS Legend APIs backed by Snowflake and SingleStore, reducing access latency from <span className="text-[#F1F3F5] font-semibold">~90s to ~4s</span>.
-              </p>
+              <div className="text-sm text-[#9CA3AB] leading-relaxed space-y-3">
+                <p>
+                  Migrated reference-data sourcing for <span className="text-[#F1F3F5] font-semibold">5M+ daily regulatory transactions</span> from legacy Sybase IQ to a new authenticated data platform. Redesigned Spark processing and built reusable FINOS Legend APIs backed by Snowflake and SingleStore, reducing access latency from <span className="text-[#F1F3F5] font-semibold">~90s to ~4s</span>.
+                </p>
+                <p>
+                  Improved reference-data query response times by <span className="text-[#F1F3F5] font-semibold">~2x</span> by developing optimized GraphQL queries and Java request/response models, reducing redundant retrieval through CTE-based execution.
+                </p>
+              </div>
             </div>
 
             <div className="border border-[#292E34] bg-[#16191D] p-5 rounded-sm">
@@ -33,6 +38,18 @@ export function Experience() {
               <p className="text-sm text-[#9CA3AB] leading-relaxed">
                 Redesigned validation and enrichment logic that reduced daily transaction fallout from <span className="text-[#F1F3F5] font-semibold">~20,000 to ~2,000</span>, contributing to <span className="text-[#F1F3F5] font-semibold">~$2M</span> in avoided compliance penalties. Built a Java reconciliation app automating SQL-based accuracy checks across <span className="text-[#F1F3F5] font-semibold">100K+ records/week</span>.
               </p>
+            </div>
+
+            <div className="border border-[#292E34] bg-[#16191D] p-5 rounded-sm">
+              <h4 className="text-sm font-bold text-[#27C2B8] mb-3 tracking-wider uppercase">{'>'} Testing & CI/CD</h4>
+              <div className="text-sm text-[#9CA3AB] leading-relaxed space-y-3">
+                <p>
+                  Improved integration testing and implementation time by <span className="text-[#F1F3F5] font-semibold">~2x</span> by extending Cucumber test suites with ALLOY-specific scenarios while preserving existing regression coverage.
+                </p>
+                <p>
+                  Integrated the reconciliation application into existing GitLab CI/CD workflows by configuring .gitlab-ci.yml and project rules for team-wide development and deployment.
+                </p>
+              </div>
             </div>
 
             <div className="border border-[#292E34] bg-[#16191D] p-5 rounded-sm">
