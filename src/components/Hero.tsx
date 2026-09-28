@@ -1,6 +1,5 @@
 "use client";
 
-import Link from 'next/link';
 import { motion, type Variants } from 'framer-motion';
 import { SystemsFlow } from './SystemsFlow';
 
@@ -61,24 +60,25 @@ export function Hero() {
         
         <motion.div variants={fadeUp} className="flex flex-col gap-4 mt-2">
           <div className="flex flex-wrap items-center gap-6">
-            <Link 
+            <a 
               href="#projects" 
               className="text-xs tracking-[0.2em] uppercase border border-[#27C2B8] text-[#27C2B8] px-6 py-3 hover:bg-[#27C2B8] hover:text-[#111315] transition-all duration-300 hover:shadow-[0_0_20px_rgba(39,194,184,0.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm"
             >
               View Projects
-            </Link>
-            <Link 
+            </a>
+            <a 
               href="/resume/Mathew_Pius_Olickal_Resume.pdf" 
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xs tracking-[0.2em] uppercase border border-[#292E34] text-[#9CA3AB] px-6 py-3 hover:border-[#27C2B8] hover:text-[#27C2B8] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm"
             >
               Resume
-            </Link>
+            </a>
           </div>
 
           <div className="flex items-center gap-6 text-xs tracking-[0.2em] uppercase text-[#697078]">
-            <Link href="https://github.com/mathewpius19" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">[GITHUB]</Link>
-            <Link href="https://www.linkedin.com/in/mathew-pius-olickal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">[LINKEDIN]</Link>
+            <a href="https://github.com/mathewpius19" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">[GITHUB]</a>
+            <a href="https://www.linkedin.com/in/mathew-pius-olickal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">[LINKEDIN]</a>
           </div>
         </motion.div>
       </motion.div>

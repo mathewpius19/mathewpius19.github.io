@@ -1,6 +1,5 @@
 "use client";
 
-import Link from 'next/link';
 import { useState } from 'react';
 
 export function Navbar() {
@@ -9,26 +8,26 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 z-50 w-full bg-[#111315]/90 backdrop-blur-md border-b border-[#292E34]">
       <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-        <Link 
+        <a 
           href="/" 
           aria-label="Home"
           className="text-[#27C2B8] font-bold text-sm tracking-widest uppercase hover:text-[#4DD8CF] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm"
         >
           &lt;MPO /&gt;
-        </Link>
+        </a>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8 text-xs tracking-widest uppercase text-[#9CA3AB]">
-          <Link href="#about" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">About</Link>
-          <Link href="#experience" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">Experience</Link>
-          <Link href="#projects" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">Projects</Link>
-          <Link href="#skills" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">Skills</Link>
+          <a href="#about" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">About</a>
+          <a href="#experience" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">Experience</a>
+          <a href="#projects" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">Projects</a>
+          <a href="#skills" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">Skills</a>
         </div>
         
         <div className="hidden md:flex items-center space-x-4 text-xs tracking-widest uppercase text-[#697078]">
-          <Link href="/resume/Mathew_Pius_Olickal_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume" className="hover:text-[#27C2B8] transition-colors mr-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">RESUME</Link>
-          <Link href="https://github.com/mathewpius19" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">GH</Link>
-          <Link href="https://www.linkedin.com/in/mathew-pius-olickal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">IN</Link>
+          <a href="/resume/Mathew_Pius_Olickal_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume" className="hover:text-[#27C2B8] transition-colors mr-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">RESUME</a>
+          <a href="https://github.com/mathewpius19" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">GH</a>
+          <a href="https://www.linkedin.com/in/mathew-pius-olickal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="hover:text-[#27C2B8] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#27C2B8] focus-visible:ring-offset-4 focus-visible:ring-offset-[#111315] rounded-sm">IN</a>
         </div>
 
         {/* Mobile Hamburger Toggle */}
@@ -52,14 +51,14 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden border-t border-[#292E34] bg-[#111315] absolute w-full left-0 top-14 shadow-xl">
           <div className="flex flex-col px-6 py-6 space-y-6 text-xs tracking-widest uppercase text-[#9CA3AB]">
-            <Link href="#about" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors block">About</Link>
-            <Link href="#experience" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors block">Experience</Link>
-            <Link href="#projects" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors block">Projects</Link>
-            <Link href="#skills" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors block">Skills</Link>
+            <a href="#about" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors block">About</a>
+            <a href="#experience" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors block">Experience</a>
+            <a href="#projects" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors block">Projects</a>
+            <a href="#skills" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors block">Skills</a>
             <div className="pt-6 mt-2 border-t border-[#292E34] flex gap-8 text-[#697078]">
-              <Link href="/resume/Mathew_Pius_Olickal_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors">RESUME</Link>
-              <Link href="https://github.com/mathewpius19" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors">GH</Link>
-              <Link href="https://www.linkedin.com/in/mathew-pius-olickal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors">IN</Link>
+              <a href="/resume/Mathew_Pius_Olickal_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors">RESUME</a>
+              <a href="https://github.com/mathewpius19" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors">GH</a>
+              <a href="https://www.linkedin.com/in/mathew-pius-olickal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" onClick={() => setIsOpen(false)} className="hover:text-[#27C2B8] transition-colors">IN</a>
             </div>
           </div>
         </div>

@@ -89,6 +89,8 @@ export function SystemsFlow() {
         {/* Periodic Request Pulse */}
         {!shouldReduceMotion && (
           <motion.circle
+            cx={80}
+            cy={200}
             r="3.5"
             fill="#27C2B8"
             style={{ filter: "drop-shadow(0 0 6px #27C2B8)" }}
