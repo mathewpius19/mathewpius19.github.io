@@ -39,7 +39,7 @@ export function Hero() {
         </motion.div>
         
         <motion.h1
-          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-[#F1F3F5] glitch"
+          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-[#F1F3F5]"
           variants={fadeUp}
         >
           MATHEW<br />

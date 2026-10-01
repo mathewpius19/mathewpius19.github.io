@@ -19,19 +19,6 @@
   min-height: 100vh;
 }
 
-/* Glitch animation */
-@keyframes glitch {
-  0% { text-shadow: 2px 0 #27C2B8, -2px 0 #4DD8CF; }
-  20% { text-shadow: -2px 2px #27C2B8, 2px -2px #4DD8CF; }
-  40% { text-shadow: 2px -2px #27C2B8, -2px 2px #4DD8CF; }
-  60% { text-shadow: 0 2px #27C2B8, 0 -2px #4DD8CF; }
-  80% { text-shadow: -2px 0 #27C2B8, 2px 0 #4DD8CF; }
-  100% { text-shadow: 2px 0 #27C2B8, -2px 0 #4DD8CF; }
-}
-
-.glitch {
-  animation: glitch 3s infinite;
-}
 
 /* Scanline */
 @keyframes scanline {
