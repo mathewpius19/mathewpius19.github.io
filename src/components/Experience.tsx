@@ -45,7 +45,7 @@ export function Experience() {
             <div className="border border-[#292E34] bg-[#16191D] p-5 rounded-sm">
               <h4 className="text-sm font-bold text-[#27C2B8] mb-3 tracking-wider uppercase">{'>'} AI-Assisted Diagnostics</h4>
               <p className="text-sm text-[#9CA3AB] leading-relaxed">
-                Built MCP servers exposing internal diagnostic APIs to an existing AI chatbot, enabling engineers to trace data-field lineage and identify missing values or upstream failures. Reduced resolution time by <span className="text-[#F1F3F5] font-semibold">~30%</span>.
+                Developed MCP-powered AI remediation workflows for Terraform deployments and Spark refiners, enabling engineers to automate root-cause investigation, identify affected repositories, and generate remediation pull requests. Initially deployed for configuration and connectivity failures before expanding to high-volume Spark processing systems, reducing deployment failure resolution time by <span className="text-[#F1F3F5] font-semibold">~70%.</span>.
               </p>
             </div>
           </div>
